@@ -21,9 +21,7 @@ Introduction
   our world humming along in the manner to which we have become
   accustomed.
   
-| 
-
-  For over 35 years, IBM has been researching an utterly different kind
+| For over 35 years, IBM has been researching an utterly different kind
   of information and information processing, as different from ordinary
   “classical” information as a dream is from a book. Unlike dreams, this
   new kind of information, called *quantum information*, is both
@@ -37,9 +35,7 @@ Introduction
   fingertips! We’ll soon be upgrading our public quantum computer, but
   even five qubits are enough to get a feel for quantum computing.
 
-| 
-  
-  Quantum theory, developed in the early 1900’s, revolutionized physics
+| Quantum theory, developed in the early 1900’s, revolutionized physics
   and chemistry by successfully explaining the weird behavior of tiny
   particles like atoms and electrons. In the late twentieth century it
   was discovered that it applied not just to these particles, but to
@@ -47,9 +43,7 @@ Introduction
   technology of information processing, opening the door to new types of
   computing and communication.
   
-| 
-  
-  By going through this Beginner’s Guide, we hope you will learn what’s
+| By going through this Beginner’s Guide, we hope you will learn what’s
   different about quantum computing, and the new possibilities that it
   opens up. Some of these might include designing new materials and
   drugs, searching databases faster, and solving systems of linear
@@ -58,9 +52,7 @@ Introduction
   fundamental properties of the quantum world: **superposition** and
   **entanglement**.
    
-| 
-  
-  So, what is **superposition**? Qubits can be in the “:math:`|0\rangle`”
+| So, what is **superposition**? Qubits can be in the “:math:`|0\rangle`”
   state (called a zero-ket), the “:math:`|1\rangle`” state (called the
   one-ket), or a linear combination of the two (superposition). The
   half-angle bracket notation :math:`|\rangle` is conventionally used to
