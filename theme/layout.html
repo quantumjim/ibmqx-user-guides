@@ -19,6 +19,7 @@
 ] %}
 
 {% set script_files = script_files + [
+    '_static/themeExt.js'
   ]
 %}
 {%- block header %}{% endblock %}
@@ -44,5 +45,4 @@
         </main>
     </div>
 {%- endblock %}
-<script type="text/javascript" src="{{ pathto('_static/themeExt.js', 1) }}"></script>
 
