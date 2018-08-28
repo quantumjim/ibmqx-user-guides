@@ -7,6 +7,10 @@ SPHINXBUILD   = python3 -msphinx
 SPHINXPROJ    = QISKit SDK
 SOURCEDIR     = rst
 BUILDDIR      = _build
+SOURCEDIRBEGINNER     = rst/beginners-guide
+BUILDDIRDIRBEGINNER      = _build/beginners-guide
+SOURCEDIRFULLUSERGUIDE     = rst/full-user-guide
+BUILDDIRFULLUSERGUIDE      = _build/full-user-guide
 
 .PHONY: help generate doc
 
@@ -19,7 +23,9 @@ BUILDDIR      = _build
 
 
 %: Makefile
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIRBEGINNER)" "$(BUILDDIRDIRBEGINNER)" $(SPHINXOPTS) $(O)
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIRFULLUSERGUIDE)" "$(BUILDDIRFULLUSERGUIDE)" $(SPHINXOPTS) $(O)
 
 # Put it first so that "make" without argument is like "make help".
 help:

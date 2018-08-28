@@ -11,8 +11,8 @@ IBM Q Experience Documentation
    :includehidden:
 
 
-   Beginner's Guide <beginners-guide/introduction.rst>
-   full-user-guide/introduction.rst
+   Beginner's Guide <https://google.com>
+   Full user <https://google.com>
 
 .. cssclass:: guide-toc
 .. toctree::
