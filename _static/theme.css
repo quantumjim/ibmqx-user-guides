@@ -155,7 +155,7 @@ span.link-wrapper{
     color: #171717 !important;
     font-weight: 700;
  }
- .mdl-layout--fixed-drawer>.mdl-layout__content{
+ .mdl-layout--fixed-drawer .mdl-layout__content{
     margin-left: 320px !important;
     overflow-x: hidden;
     position: relative;
