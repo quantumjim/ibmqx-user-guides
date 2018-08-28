@@ -8,7 +8,6 @@ IBM Q Experience Documentation
 .. toctree::
    :maxdepth: 3
    :glob:
-   :includehidden:
 
    Beginner's Guide <beginners-guide/introduction.rst>
    full-user-guide/introduction.rst
