@@ -22,9 +22,9 @@ whose perspective is limited by classical physics. 
 
 .. cssclass:: guide-toc
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :glob:
-   :includehidden:
 
    000-FAQ/000*
    001-The_IBM_Q_Experience/001*
