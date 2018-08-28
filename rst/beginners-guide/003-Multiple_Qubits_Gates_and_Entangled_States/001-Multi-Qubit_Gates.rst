@@ -1,5 +1,5 @@
-Multi-Qubit Interactions
-========================
+Multiple Qubits and Entanglement
+=================================
 
 .. toctree::
    :maxdepth: 1

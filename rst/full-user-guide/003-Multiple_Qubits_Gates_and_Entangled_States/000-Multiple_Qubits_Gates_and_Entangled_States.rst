@@ -1,4 +1,4 @@
-Multiple Qubits, Gates, and Entangled States
+Multi-Qubit Gates and Entangled States
 ============================================
 
 

@@ -1,6 +1,5 @@
-Getting Started with the Composer
-=================================
-
+The Quantum Composer
+======================
 |
 
 Throughout this user guide, we will create and run experiments on IBM's **Quantum Composer**, a graphical user interface for programming a quantum processor. Think of the Composer as a tool to construct quantum algorithms using a library of well-defined *measurements* and *gates*, which are operations that change the state of a *qubit.* (We'll learn more about the special properities of qubits in Chapter 2). Below, we go through the steps of setting up and running algorithms on the Composer.

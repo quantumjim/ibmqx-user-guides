@@ -1,4 +1,4 @@
-The Weird and Wonderful World of the Qubit
+The Wonderful World of the Qubit
 ==========================================
 
 .. toctree::

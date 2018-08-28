@@ -1,5 +1,5 @@
-Superposition and Entanglement
-==============================
+Introducing Quantum Properties
+===============================
 
 |   
 
