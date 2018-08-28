@@ -17,7 +17,6 @@ Paper, pencil, and quantum enthusiasm are recommended!
    :hidden:
    :maxdepth: 3
    :glob:
-   :includehidden:
       
    001-Introduction/000*
    002-The_Weird_and_Wonderful_World_of_the_Qubit/001*
