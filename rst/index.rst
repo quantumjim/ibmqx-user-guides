@@ -6,7 +6,6 @@ IBM Q Experience Documentation
 
 .. cssclass:: guide-toc
 .. toctree::
-   :hidden:
    :maxdepth: 3
    :glob:
    :includehidden:
@@ -17,7 +16,6 @@ IBM Q Experience Documentation
 
 .. cssclass:: guide-toc
 .. toctree::
-   :hidden:
    :maxdepth: 2
    :glob:
    :includehidden:
