@@ -1,5 +1,5 @@
 Introducing Entanglement
-=================================
+=========================
 
 .. toctree::
    :maxdepth: 1

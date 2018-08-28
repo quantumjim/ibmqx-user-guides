@@ -1,9 +1,9 @@
-GHZ Test Results in the IBM Q Experience
-==========================================
+GHZ Test Results on the Composer
+=================================
 
 |
 
-Amazingly enough, we can test this ourselves in the Quantum Experience
+Amazingly enough, we can test this ourselves on the Composer 
 by creating a GHZ state, applying gates to the three qubits to put
 them in a state of superposition and entanglement, and performing the
 above combination of measurements. When we measure all three along the
