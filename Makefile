@@ -24,7 +24,6 @@ BUILDDIRFULLUSERGUIDE      = _build/full-user-guide
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIRBEGINNER)" "$(BUILDDIRDIRBEGINNER)" $(SPHINXOPTS) $(O)
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIRFULLUSERGUIDE)" "$(BUILDDIRFULLUSERGUIDE)" $(SPHINXOPTS) $(O)
 
 # Put it first so that "make" without argument is like "make help".
