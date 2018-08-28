@@ -142,8 +142,6 @@ html_theme_options = {
     # Values: True, False (Default: True)
     'show_drawer_title': True,
     # Render footer.
-    # Values: True, False (Default: True)
-    'theme_show_footer': False
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
