@@ -21,7 +21,6 @@
 {% set script_files = script_files + [
   ]
 %}
-<script type="text/javascript" src="{{ pathto('_static/themeExt.js', 1) }}"></script>
 {%- block header %}{% endblock %}
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% include "relations.html" %}{% endblock %}
@@ -45,3 +44,5 @@
         </main>
     </div>
 {%- endblock %}
+<script type="text/javascript" src="{{ pathto('_static/themeExt.js', 1) }}"></script>
+
