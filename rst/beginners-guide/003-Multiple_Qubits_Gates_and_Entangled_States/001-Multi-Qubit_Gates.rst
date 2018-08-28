@@ -1,4 +1,4 @@
-Multiple Qubits and Entanglement
+Introducing Entanglement
 =================================
 
 .. toctree::
