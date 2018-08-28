@@ -9,7 +9,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ pathto('_static/theme.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/plex/css/ibm-plex.css', 1) }}" type="text/css" />
-    <script type="text/javascript" src="{{ pathto('_static/themeExt.js', 1) }}"></script>
 
     {{ super() }}
 {% endblock %}
@@ -22,7 +21,7 @@
 {% set script_files = script_files + [
   ]
 %}
-
+<script type="text/javascript" src="{{ pathto('_static/themeExt.js', 1) }}"></script>
 {%- block header %}{% endblock %}
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% include "relations.html" %}{% endblock %}
