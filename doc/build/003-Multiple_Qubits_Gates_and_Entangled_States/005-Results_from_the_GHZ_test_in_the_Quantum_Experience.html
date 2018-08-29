@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/plex/css/ibm-plex.css" type="text/css" />
+
+    
+    <title>GHZ Test Results on the Composer &#8212; Experience Documentation 2.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/material-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/material-design-lite-1.3.0/material.blue-indigo.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/themeExt.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Next Steps" href="../004-Next_Steps/000-Next_Steps.html" />
+    <link rel="prev" title="Bell and GHZ Tests (Cont.)" href="004-Bell_and_GHZ_Tests_(Cont.).html" /> 
+  </head>
+<body>
+    <div class="mdl-layout mdl-js-layout  mdl-layout--fixed-drawer"><header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../introduction.html">
+              <span class="title-text">
+                  Experience Documentation
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../001-Introduction/000-Introduction.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/001-Getting_Started.html">The Quantum Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/002-Viewing_Results.html">Viewing Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/003-Superposition_and_Entanglement.html">Introducing Quantum Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html">Exploring the Qubit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/002-The_Bloch_Sphere.html">The Bloch Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/003-Single-Qubit_Gates.html">Single-Qubit Gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/004-Creating_Superposition.html">Creating Superposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/005-Qubit_Phase.html">Qubit Phase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/006-Summary_of_Quantum_Gates.html">Summary of Quantum Gates</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="001-Multi-Qubit_Gates.html">Introducing Entanglement</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="002-Entanglement.html">Entanglement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="003-Bell_and_GHZ_Tests.html">Bell and GHZ Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="004-Bell_and_GHZ_Tests_(Cont.).html">Bell and GHZ Tests (Cont.)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GHZ Test Results on the Composer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../004-Next_Steps/000-Next_Steps.html">Next Steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/001-Dirac_Notation.html">Dirac Notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/002-Introduction_to_Matrices.html">Introduction to Matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/003-Introduction_to_OpenQASM.html">Introduction to OpenQASM</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+<header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../introduction.html">
+              <span class="title-text">
+                  Experience Documentation
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../001-Introduction/000-Introduction.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/001-Getting_Started.html">The Quantum Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/002-Viewing_Results.html">Viewing Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-Introduction/003-Superposition_and_Entanglement.html">Introducing Quantum Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html">Exploring the Qubit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/002-The_Bloch_Sphere.html">The Bloch Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/003-Single-Qubit_Gates.html">Single-Qubit Gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/004-Creating_Superposition.html">Creating Superposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/005-Qubit_Phase.html">Qubit Phase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/006-Summary_of_Quantum_Gates.html">Summary of Quantum Gates</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="001-Multi-Qubit_Gates.html">Introducing Entanglement</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="002-Entanglement.html">Entanglement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="003-Bell_and_GHZ_Tests.html">Bell and GHZ Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="004-Bell_and_GHZ_Tests_(Cont.).html">Bell and GHZ Tests (Cont.)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GHZ Test Results on the Composer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../004-Next_Steps/000-Next_Steps.html">Next Steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/001-Dirac_Notation.html">Dirac Notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/002-Introduction_to_Matrices.html">Introduction to Matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Next_Steps/003-Introduction_to_OpenQASM.html">Introduction to OpenQASM</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+
+    <div class="document">
+        <div class="page-content">
+        
+  <div class="section" id="ghz-test-results-on-the-composer">
+<h1>GHZ Test Results on the Composer<a class="headerlink" href="#ghz-test-results-on-the-composer" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Amazingly enough, we can test this ourselves on the Composer
+by creating a GHZ state, applying gates to the three qubits to put
+them in a state of superposition and entanglement, and performing the
+above combination of measurements. When we measure all three along the
+X basis, we get the equivalent of this “-1” condition compared to when
+we measure two of the qubits along the Y basis and the third along the
+X basis.</p>
+<p>Our observation tells us that the system behaves as quantum mechanics
+predicts, and not how our classical intuition would have predicted!</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Measurement (Q3/Q2/Q1)</strong></td>
+<td><strong>States that are observed</strong></td>
+</tr>
+<tr class="row-even"><td>YYX</td>
+<td>000, 011, 101, 110</td>
+</tr>
+<tr class="row-odd"><td>YXY</td>
+<td>000, 011, 101, 110</td>
+</tr>
+<tr class="row-even"><td>XYY</td>
+<td>000, 011, 101, 110</td>
+</tr>
+<tr class="row-odd"><td>XXX</td>
+<td>111, 100, 010, 001</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Note once again: if we measure in the standard basis (along Z), we get
+only 000 and 111 (with a 50-50 split!). The noise (small errors) in the
+below table comes from experimental error due to the fact that we used a
+real quantum processor, which is imperfect.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><img alt="image0" src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_039c3bf6e6e54d76b8e66152e2f87877/images-classroom/ghz-test-new-conventiongm4l8dnexijatt9.png" /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+
+
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+     <a id="button-prev" href="004-Bell_and_GHZ_Tests_(Cont.).html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
+         <div class="pagenation-text">
+            <span class="pagenation-direction">Previous</span>
+            <div>Bell and GHZ Tests (Cont.)</div>
+         </div>
+     </a>
+     <a id="button-next" href="../004-Next_Steps/000-Next_Steps.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
+        <div class="pagenation-text">
+            <span class="pagenation-direction">Next</span>
+            <div>Next Steps</div>
+        </div>
+     </a>
+        
+        </main>
+    </div>
+  </body>
+</html>
