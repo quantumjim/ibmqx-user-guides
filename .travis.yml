@@ -21,4 +21,4 @@ script:
     - travis-sphinx -o doc/build/beginners --source=rst/beginners-guide -n build
 
 after_success:
-    - travis-sphinx -v deploy
+    - travis-sphinx deploy
