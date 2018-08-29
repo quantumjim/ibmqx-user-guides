@@ -18,8 +18,8 @@ install:
 
 
 script:
-    - travis-sphinx rst/beginners-guide -n build
-    - travis-sphinx rst/full-user-guide -n build
+    - travis-sphinx --source=rst/beginners-guide -n _build/beginners-guide
+    - travis-sphinx --source=rst/beginners-guide -n _build/beginners-guide
 
 after_success:
     - travis-sphinx deploy
