@@ -71,6 +71,7 @@ $(function() {
         $('.mdl-layout__drawer nav .item .title').click(function() {
             const $toggle = $(this).children('span .nav-toggle').children('a');
             const id = $toggle.attr('data-toggle');
+            $(this).addClass('active')
             $(`ul${id}`).toggleClass('show').animate({height: "toggle", opacity: "toggle"});
             $toggle.parent().toggleClass('show');
         });
