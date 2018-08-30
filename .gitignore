@@ -1,5 +1,6 @@
 .idea/*
-_build/html/*
+.DS_Store/
+_build/*
 
 _build/doctrees/*
 qiskit/bin/activate

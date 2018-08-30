@@ -26,7 +26,7 @@ $(function() {
         $.each($lists, function(index, li) {
             const $li = $(li);
             const $linkWrapper = $('<span class="link-wrapper"></span>');
-            const $link = $li.children('a').addClass('ibm-type-a');
+            const $link = $li.children('a').addClass('ibm-type-b-tight');
             const $div = $('<div class="item"></div>');
             $li.append($div.append($linkWrapper.append($link)));
 
@@ -43,8 +43,9 @@ $(function() {
 
                 const $toggleWrapper = $('<span class="nav-toggle show"></span>');
                 $linkWrapper.addClass('title');
-                $linkWrapper.children('a').addClass('ibm-type-a');
-
+                $linkWrapper.children('a').removeAttr("href").css("cursor","pointer");
+                $linkWrapper.children('a').addClass('ibm-type-b-tight semibold');
+                $div.addClass('title');
                 $li.append($div.append(
                     $linkWrapper.append(
                         $toggleWrapper.append(
@@ -69,8 +70,8 @@ $(function() {
     }
 
     function collapse() {
-        $('.mdl-layout__drawer nav .nav-toggle a').click(function() {
-            const $toggle = $(this);
+        $('.mdl-layout__drawer nav .item .title').click(function() {
+            const $toggle = $(this).children('span .nav-toggle').children('a');
             const id = $toggle.attr('data-toggle');
             $(`ul${id}`).toggleClass('show').animate({height: "toggle", opacity: "toggle"});
             $toggle.parent().toggleClass('show');

@@ -1,6 +1,9 @@
 body{
     height: 100%;
 }
+html{
+    font-size: 16px !important;
+}
 * {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', sans-serif !important;
@@ -83,9 +86,16 @@ a.reference.external:hover{
 }
 .active>span.link-wrapper.title{
     margin-left: 27px !important;
+    height: 32px !important;
+    width: 100% !important;
+}
+.globaltoc ul li .link-wrapper>a{
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
 }
 .active>span.link-wrapper{
-    margin-left: 52px !important;
+    margin-left: 28px !important;
 }
 .active {
     border-left: 5px solid blue;
@@ -98,7 +108,9 @@ a.reference.external:hover{
     box-shadow: none !important;
     width: 320px !important;
 }
-
+.globaltoc .nav-toggle{
+    height: initial !important;
+}
 
 .mdl-layout__drawer>.mdl-layout-title {
     border: none !important;
@@ -109,17 +121,19 @@ a.reference.external:hover{
     align-items: center;
 }
 span.link-wrapper.title{
-    margin-left: 32px !important;
+    margin-left: 16px !important;
     margin-right: 16px !important;
+    height: 32px;
+    width: 100%;
 }
 span.link-wrapper{
-    margin-left: 58px !important;
+    margin-left: 33px !important;
 }
 
 .mdl-layout__drawer>.mdl-layout-title .title-text{
     text-align: left !important;
     margin: 0 !important;
-    padding-left: 32px !important;
+    padding-left: 16px !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     line-height: 1.5rem !important;
@@ -129,31 +143,35 @@ span.link-wrapper{
 .mdl-navigation {
     padding-top: 0 !important;
 }
-
-.link-wrapper.title{
-    border-bottom: solid 1px #DCDCDC;
-}
-
-.ibm-type-a {
+.ibm-type-b-tight {
+  font-size: 0.875rem;
   font-weight: 400;
-  font-size: 0.75rem;
-  letter-spacing: 0.02rem;
-  line-height: 1rem;
-  margin-bottom: 0rem !important;
-  max-width: 26.5rem;
-  color: #3D3D3D !important;
-
+  letter-spacing: 0.01rem;
+  line-height: 1.125rem;
+  max-width: 30rem;
+}
+.semibold{
+  font-weight: 600;
 }
 
- .item:hover{
+.item{
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.item:hover{
     background: #DCDCDC;
     color: #171717 !important;
     font-weight: 700;
  }
 
- .item span a:hover{
+ .item:hover span a{
     color: #171717 !important;
     font-weight: 700;
+ }
+
+ .item:hover .nav-toggle svg {
+    fill: #171717;
  }
  .mdl-layout--fixed-drawer .mdl-layout__content{
     margin-left: 320px !important;
@@ -172,6 +190,7 @@ span.link-wrapper{
 .iconSize{
    width: 20px;
    height: 20px;
+   fill: #6F6F6F;
 }
 .globaltoc ul li{
     min-height: 0px !important;
