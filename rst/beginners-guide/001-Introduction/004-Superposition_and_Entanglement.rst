@@ -1,5 +1,5 @@
-Introducing Quantum Properties
-===============================
+Quantum Properties
+===================
 
 |   
 

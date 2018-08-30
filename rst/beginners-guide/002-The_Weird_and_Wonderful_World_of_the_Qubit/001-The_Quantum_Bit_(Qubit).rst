@@ -1,4 +1,4 @@
-Exploring the Qubit
+The Quantum Bit (Qubit)
 =======================
 
 .. toctree::
