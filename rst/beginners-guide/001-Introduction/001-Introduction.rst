@@ -1,14 +1,7 @@
 Introduction
 ================
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   *
-
-| 
+|
 
 We’re at the start of a new stage in the information revolution. The
 first stage began around 1950 with a handful of expensive room-sized
