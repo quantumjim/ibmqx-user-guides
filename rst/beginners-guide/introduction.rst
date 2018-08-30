@@ -20,5 +20,5 @@ Paper, pencil, and quantum enthusiasm are recommended!
       
    001-Introduction/000*
    002-The_Weird_and_Wonderful_World_of_the_Qubit/000*
-   003-Multiple_Qubits_Gates_and_Entangled_States/001*
+   003-Multiple_Qubits_Gates_and_Entangled_States/000*
    004-Next_Steps/000*

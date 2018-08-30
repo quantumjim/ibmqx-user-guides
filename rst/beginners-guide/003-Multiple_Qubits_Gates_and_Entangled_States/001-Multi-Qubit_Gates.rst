@@ -1,12 +1,5 @@
-Introducing Entanglement
-=========================
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   *
+Multi-Qubit Gates
+==================
 
 |
 
