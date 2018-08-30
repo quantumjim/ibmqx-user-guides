@@ -23,7 +23,12 @@ main{
   color: #0062FF !important;
   text-decoration: none;
 }
-
+.current{
+    font-weight: normal !important;
+}
+.sectionActive span a{
+    color: #171717 !important;
+}
 .guide-toc ul li a.reference.internal{
   color: #0062FF !important;
 }
@@ -49,6 +54,7 @@ a.reference.external:hover{
 #button-prev{
     text-align: right;
     padding-left: 30px !important;
+    border-right: 1px solid white;
 }
 
 
@@ -118,7 +124,7 @@ a.reference.external:hover{
     text-align: left !important;
     align-items: center;
     min-height: 32px !important;
-    margin-top: 16px !important;
+    margin: 16px 0 !important;
 }
 span.link-wrapper.title{
     margin-left: 16px !important;
@@ -138,6 +144,7 @@ span.link-wrapper{
     font-weight: 500 !important;
     line-height: 1.5rem !important;
     max-width: 35rem;
+    font-weight: 600 !important;
     color: #171717 !important;
 }
 .mdl-navigation {
@@ -168,12 +175,12 @@ span.link-wrapper{
 .item:hover{
     background: #DCDCDC;
     color: #171717 !important;
-    font-weight: 700;
+    font-weight: normal;
  }
 
  .item:hover span a{
     color: #171717 !important;
-    font-weight: 700;
+    font-weight: normal;
  }
 
  .item:hover .nav-toggle svg {

@@ -39,9 +39,11 @@ $(function() {
             }
             if ($ul.length && $ul[0].children.length > 0) {
                 const ulId = `globalnav-${index}`;
+                if($ul.hasClass('current')){
+                    $div.addClass('sectionActive');
+                }
                 $ul.attr('id', ulId);
                 $ul.addClass('collapse sublist');
-
                 const $toggleWrapper = $('<span class="nav-toggle show"></span>');
                 $linkWrapper.addClass('title');
                 $linkWrapper.children('a').removeAttr("href").css("cursor","pointer");
@@ -70,8 +72,8 @@ $(function() {
     function collapse() {
         $('.mdl-layout__drawer nav .item .title').click(function() {
             const $toggle = $(this).children('span .nav-toggle').children('a');
+            $(this).toggleClass('sectionActive');
             const id = $toggle.attr('data-toggle');
-            $(this).addClass('active')
             $(`ul${id}`).toggleClass('show').animate({height: "toggle", opacity: "toggle"});
             $toggle.parent().toggleClass('show');
         });
