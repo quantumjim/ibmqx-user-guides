@@ -9,7 +9,8 @@ $(function() {
     function deleteMainHeader() {
         const $main = $('.mdl-layout__content');
         $main.find('.mdl-layout__drawer').remove();
-        //TODO: Extract to function
+    }
+    function replaceLinksComposer() {
         const $links = $('.page-content').find('a');
         $.each($links, function(index, link) {
             if(link.innerText.indexOf('composer') !== -1) {
@@ -186,6 +187,7 @@ $(function() {
     deleteMainHeader();
     collapseResponsive();
     collapseMediumResponsive();
+    replaceLinksComposer();
 
     $('.mdl-layout__content').focus();
 });

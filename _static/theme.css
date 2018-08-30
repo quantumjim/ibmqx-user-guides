@@ -98,7 +98,7 @@ a.reference.external:hover{
     margin-left: 28px !important;
 }
 .active {
-    border-left: 5px solid blue;
+    border-left: 3px solid #0062FF;
     color: #171717;
 }
 .active a{
@@ -116,9 +116,9 @@ a.reference.external:hover{
     border: none !important;
     font-weight: 100 !important;
     text-align: left !important;
-    padding: 1rem 0 !important;
-    padding-right: 1.5rem !important;
     align-items: center;
+    min-height: 32px !important;
+    margin-top: 16px !important;
 }
 span.link-wrapper.title{
     margin-left: 16px !important;
@@ -142,6 +142,12 @@ span.link-wrapper{
 }
 .mdl-navigation {
     padding-top: 0 !important;
+}
+.globaltoc .nav-toggle>a {
+    margin: 0px !important;
+}
+.globaltoc .nav-toggle>a.show {
+    margin: 0px !important;
 }
 .ibm-type-b-tight {
   font-size: 0.875rem;
@@ -192,6 +198,9 @@ span.link-wrapper{
    height: 20px;
    fill: #6F6F6F;
 }
+.iconSize:hover{
+   fill: #171717 !important;
+}
 .globaltoc ul li{
     min-height: 0px !important;
 }
@@ -209,6 +218,13 @@ span.link-wrapper{
 }
 .composerButton:hover{
     background: #054ADA;
+}
+.iconMediumResponsiveClose{
+cursor: pointer;
+}
+
+.iconMediumResponsiveTableOfContent{
+    cursor: pointer;
 }
 @media(min-width: 1056px) {
     .iconMediumResponsiveClose{
@@ -242,7 +258,7 @@ span.link-wrapper{
     }
     .mdl-layout-title{
         display: flex !important;
-        padding-right: 20px !important;
+        padding-right: 16px !important;
     }
 
     .mdl-layout__drawer.close{
@@ -252,6 +268,8 @@ span.link-wrapper{
        justify-content: center;
        padding-right: 0 !important;
        margin: 0 !important;
+       padding-top: 16px !important;
+
      }
     .mdl-layout__drawer.close .mdl-layout-title .title{
         display: none;
@@ -296,7 +314,6 @@ span.link-wrapper{
         display: block !important;
     }
     .mdl-layout__drawer {
-        position: relative !important;
         transform: translate(0px) !important;
         width: 100% !important;
         border-bottom: 1px solid #D4D4D4;
@@ -321,7 +338,10 @@ span.link-wrapper{
    .iconResponsive.show{
      transform: rotate(180deg);
    }
-       .iconMediumResponsiveClose{
+   .document .page-content {
+     margin-top: 72px !important;
+   }
+    .iconMediumResponsiveClose{
         display: none;
     }
     .iconMediumResponsiveClose.close{
