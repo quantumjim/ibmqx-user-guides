@@ -1,12 +1,5 @@
-Exploring the Qubit
+The Quantum Bit (Qubit)
 =======================
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   *
 
 |
 
