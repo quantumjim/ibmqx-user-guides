@@ -1,13 +1,6 @@
 The Quantum Bit (Qubit)
 =======================
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   *
-
 |
 
 Now that we have a basic understanding of quantum properties and how to 
