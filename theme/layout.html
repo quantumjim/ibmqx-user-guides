@@ -9,7 +9,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ pathto('_static/theme.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/plex/css/ibm-plex.css', 1) }}" type="text/css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+    <script src="https://quantumexperience.cdnedge.bluemix.net/ibm-q-navigation/latest/ibm_q_navigation.min.js"></script>
+    <link rel="stylesheet" href="https://quantumexperience.cdnedge.bluemix.net/ibm-q-navigation/latest/ibm_q_navigation.css">
     {{ super() }}
 {% endblock %}
 
@@ -29,6 +31,17 @@
 
 {%- block body_tag %}
 <body>
+  <div id="q-navigation"></div>
+  <script>
+  ibm_q_navigation.default.load(
+    '#q-navigation', // element selector to put the navigation component
+    'IBM Q', // Brand name
+    function() { console.log('search'); }, // search button click handler
+    function() { console.log('signin'); }, // signin button click handler
+    false, // should the action buttons (search and signin) be hidden
+    true // use absolute paths for all the urls
+  );
+  </script>
     <div class="mdl-layout mdl-js-layout {% if theme_fixed_header|tobool %}mdl-layout--fixed-header{% endif %} {% if theme_fixed_drawer|tobool %}mdl-layout--fixed-drawer{% endif %}">
         {%- block sidebar1 %}{% include "drawer.html" %}{% endblock %}
         <main class="mdl-layout__content" tabIndex="0">

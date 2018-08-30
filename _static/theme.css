@@ -4,6 +4,9 @@ body{
 html{
     font-size: 16px !important;
 }
+.mdl-layout{
+    background: white !important;
+}
 * {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', sans-serif !important;
@@ -112,7 +115,9 @@ a.reference.external:hover{
 }
 .mdl-layout__drawer {
     box-shadow: none !important;
-    width: 320px !important;
+    width: calc(25vw - .5rem) !important;
+    max-width: 25rem;
+    margin-left: 1rem;
 }
 .globaltoc .nav-toggle{
     height: initial !important;
@@ -182,12 +187,15 @@ span.link-wrapper{
     color: #171717 !important;
     font-weight: normal;
  }
+  .item.title:hover span a{
+    font-weight: 600;
+ }
 
  .item:hover .nav-toggle svg {
     fill: #171717;
  }
  .mdl-layout--fixed-drawer .mdl-layout__content{
-    margin-left: 320px !important;
+    margin-left: calc(25vw - .5rem) !important;
     overflow-x: hidden;
     position: relative;
  }
@@ -219,6 +227,8 @@ span.link-wrapper{
     background: #0062FF;
     padding: 16px;
     color: #ffffff;
+    font-weight: 300;
+    border: 0px;
 }
 .linkButton{
     display: initial !important;
@@ -326,6 +336,8 @@ cursor: pointer;
         border-bottom: 1px solid #D4D4D4;
         height: auto !important;
         min-height: 65px !important;
+        max-width: 100% !important;
+        margin-left: 0px;
     }
     .mdl-layout-title{
         display: flex !important;
