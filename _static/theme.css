@@ -270,6 +270,9 @@ cursor: pointer;
   .mdl-layout--fixed-drawer .mdl-layout__content{
     margin-left: 26rem !important;
  }
+ .item{
+     padding: 0px important!;
+ }
 }
 @media(min-width: 1056px) {
     .iconMediumResponsiveClose{
@@ -285,6 +288,11 @@ cursor: pointer;
         display: none !important;
     }
 }
+@media only screen and (min-width: 672px) and (max-width: 1056px) {
+        .item{
+        padding: 8px 0!important;
+    }
+}
 @media (min-width: 672px){
     .mdl-layout__drawer {
       transform: translate(0px) !important;
@@ -293,9 +301,7 @@ cursor: pointer;
        width: 50% !important;
        padding-left: 0px !important;
     }
-    .item{
-        padding: 8px 0!important;
-    }
+
 
     #button-next{
         width: 50% !important;
