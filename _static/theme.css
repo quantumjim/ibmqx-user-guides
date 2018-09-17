@@ -136,6 +136,9 @@ a.reference.external:hover{
     width: calc(25vw + .5rem) !important;
     max-width: 26rem;
 }
+.mdl-layout{
+   height: calc(100vh - 49px);
+}
 .globaltoc .nav-toggle{
     height: initial !important;
 }
