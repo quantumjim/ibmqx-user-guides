@@ -29,6 +29,12 @@ main{
 .current{
     font-weight: normal !important;
 }
+.link-wrapper.simple{
+    margin-left: 16px !important;
+}
+.active>span.link-wrapper.simple{
+    margin-left: 13px !important;
+}
 .sectionActive span a{
     color: #171717 !important;
 }
@@ -104,7 +110,7 @@ a.reference.external:hover{
     align-items: center !important;
 }
 .active>span.link-wrapper{
-    margin-left: 28px !important;
+    margin-left: 46px !important;
 }
 .active {
     border-left: 3px solid #0062FF;
@@ -241,6 +247,9 @@ cursor: pointer;
 
 .iconMediumResponsiveTableOfContent{
     cursor: pointer;
+}
+.highlight{
+    background: #F2F2F2 !important;
 }
 @media(min-width: 1056px) {
     .iconMediumResponsiveClose{
