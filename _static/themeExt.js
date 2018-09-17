@@ -10,17 +10,6 @@ $(function() {
         const $main = $('.mdl-layout__content');
         $main.find('.mdl-layout__drawer').remove();
     }
-    function replaceLinksComposer() {
-        const $links = $('.page-content').find('a');
-        $.each($links, function(index, link) {
-            if(link.innerText.indexOf('composer') !== -1) {
-               $(link).addClass('linkButton');
-               const text = link.innerText;
-               link.innerText = '';
-               $(link).append($(`<button class="composerButton">${text}</button>`));
-            }
-         });
-    }
     function reconstructionDrawerGlobalToc() {
         const $globaltoc = $('.mdl-layout__drawer nav');
         const $lists = $globaltoc.find('li');

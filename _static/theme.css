@@ -17,14 +17,14 @@ main{
     background: white !important;
 }
  a.reference.external {
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.01rem !important;
-  line-height: 1.25rem !important;
-  margin-bottom: 1rem !important;
-  max-width: 30rem !important;
-  color: #0062FF !important;
-  text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+    max-width: 30rem;
+    color: #0062FF !important;
+    text-decoration: none;
 }
 .current{
     font-weight: normal !important;
@@ -117,7 +117,6 @@ a.reference.external:hover{
     box-shadow: none !important;
     width: calc(25vw - .5rem) !important;
     max-width: 25rem;
-    margin-left: 1rem;
 }
 .globaltoc .nav-toggle{
     height: initial !important;
@@ -138,7 +137,7 @@ span.link-wrapper.title{
     width: 100%;
 }
 span.link-wrapper{
-    margin-left: 33px !important;
+    margin-left: 49px !important;
 }
 
 .mdl-layout__drawer>.mdl-layout-title .title-text{
