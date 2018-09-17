@@ -18,11 +18,14 @@ $(function() {
             const $linkWrapper = $('<span class="link-wrapper"></span>');
             const $link = $li.children('a').addClass('ibm-type-b-tight');
             const $div = $('<div class="item"></div>');
-            $li.append($div.append($linkWrapper.append($link)));
 
             const isCurrent = $li.hasClass('current') && !$link.hasClass('current');
             const isActive = $li.hasClass('current') && $link.hasClass('mdl-color-text--primary')
             const $ul = $li.children('ul');
+            if ($ul.hasClass('simple')) {
+               $linkWrapper.addClass('simple');
+            }
+            $li.append($div.append($linkWrapper.append($link)));
             if(isActive){
                 $div.addClass('active');
             }
@@ -169,6 +172,17 @@ $(function() {
               <rect class="cls-1" width="32" height="32"/>
           </svg>`));
 
+    }
+      function replaceLinksComposer() {
+        const $links = $('.page-content').find('a');
+        $.each($links, function(index, link) {
+            if(link.innerText.indexOf('composer') !== -1) {
+               $(link).addClass('linkButton');
+               const text = link.innerText;
+               link.innerText = '';
+               $(link).append($(`<button class="composerButton">${text}</button>`));
+            }
+         });
     }
     addIconsDrawer();
     styleMdlCodeBlock();
