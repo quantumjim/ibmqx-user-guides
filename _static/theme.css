@@ -251,6 +251,9 @@ cursor: pointer;
 .highlight{
     background: #F2F2F2 !important;
 }
+.linenodiv {
+    pointer-events: none;
+}
 @media(min-width: 1056px) {
     .iconMediumResponsiveClose{
         display: none !important;
