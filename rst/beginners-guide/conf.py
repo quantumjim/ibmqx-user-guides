@@ -54,7 +54,7 @@ source_suffix = '.rst'
 master_doc = 'introduction'
 
 # General information about the project.
-project = 'Beginner’s Guide'
+project = 'Beginner\'s guide'
 copyright = '2017, IBM Research and the IBM QX team'
 author = 'Jay M. Gambetta, Lev Bishop, Antonio Córcoles, Andrew Cross'
 
