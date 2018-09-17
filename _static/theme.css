@@ -30,10 +30,10 @@ main{
     font-weight: normal !important;
 }
 .link-wrapper.simple{
-    margin-left: 16px !important;
+    margin-left: 32px !important;
 }
 .active>span.link-wrapper.simple{
-    margin-left: 13px !important;
+    margin-left: 29px !important;
 }
 .sectionActive span a{
     color: #171717 !important;
@@ -100,7 +100,7 @@ a.reference.external:hover{
     font-weight: 100;
 }
 .active>span.link-wrapper.title{
-    margin-left: 27px !important;
+    margin-left: 43px !important;
     height: 32px !important;
     width: 100% !important;
 }
@@ -110,7 +110,7 @@ a.reference.external:hover{
     align-items: center !important;
 }
 .active>span.link-wrapper{
-    margin-left: 46px !important;
+    margin-left: 62px !important;
 }
 .active {
     border-left: 3px solid #0062FF;
@@ -121,8 +121,8 @@ a.reference.external:hover{
 }
 .mdl-layout__drawer {
     box-shadow: none !important;
-    width: calc(25vw - .5rem) !important;
-    max-width: 25rem;
+    width: calc(25vw + .5rem) !important;
+    max-width: 26rem;
 }
 .globaltoc .nav-toggle{
     height: initial !important;
@@ -134,22 +134,22 @@ a.reference.external:hover{
     text-align: left !important;
     align-items: center;
     min-height: 32px !important;
-    margin: 16px 0 !important;
+    margin: 24px 0 !important;
 }
 span.link-wrapper.title{
-    margin-left: 16px !important;
+    margin-left: 32px !important;
     margin-right: 16px !important;
     height: 32px;
     width: 100%;
 }
 span.link-wrapper{
-    margin-left: 49px !important;
+    margin-left: 65px !important;
 }
 
 .mdl-layout__drawer>.mdl-layout-title .title-text{
     text-align: left !important;
     margin: 0 !important;
-    padding-left: 16px !important;
+    padding-left: 32px !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     line-height: 1.5rem !important;
@@ -200,7 +200,7 @@ span.link-wrapper{
     fill: #171717;
  }
  .mdl-layout--fixed-drawer .mdl-layout__content{
-    margin-left: calc(25vw - .5rem) !important;
+    margin-left: calc(25vw + .5rem) !important;
     overflow-x: hidden;
     position: relative;
  }
