@@ -133,17 +133,10 @@ $(function() {
         });
     }
     function addIconsDrawer(){
-        $('.mdl-layout-title').append($(`<svg class="iconResponsive iconSize" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                  <defs>
-                      <style>.cls-1{fill:none;}</style>
-                  </defs>
-                  <title>Duo_SystemIcon_Master_01</title>
-                  <g id="Icon"><polygon points="16 10 26 20 24.586 21.414 16 12.828 7.414 21.414 6 20 16 10"/></g>
-                  <g id="Transparent_Rectangle" data-name="Transparent Rectangle">
-                      <rect class="cls-1" width="32" height="32" transform="translate(32 0) rotate(90)"/>
-                      <rect class="cls-1" width="32" height="32" transform="translate(32 0) rotate(90)"/>
-                  </g>
-              </svg>`));
+        $('.mdl-layout-title').append($(`<svg class="iconResponsive iconSize" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" class="ibm-icons ibm-icons--chevron--down">
+  <path d="M16 22L6 12l1.414-1.414L16 19.172l8.586-8.586L26 12 16 22z"/>
+</svg>
+`));
         $('.mdl-layout-title').append($(`<svg class="iconMediumResponsiveClose iconSize" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <defs>
                   <style>.cls-1{fill:none;}</style>
