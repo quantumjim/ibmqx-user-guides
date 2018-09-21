@@ -143,6 +143,12 @@ height: calc(100vh - 49px) !important;
     height: initial !important;
 }
 
+.page-content .highlight pre {
+    max-width: 59vw;
+}
+.page-content pre{
+    white-space: pre !important;
+}
 .mdl-layout__drawer>.mdl-layout-title {
     border: none !important;
     font-weight: 100 !important;
