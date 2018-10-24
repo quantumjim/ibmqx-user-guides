@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/plex/css/ibm-plex.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+    <script src="https://quantumexperience.cdnedge.bluemix.net/ibm-q-navigation/latest/ibm_q_navigation.min.js"></script>
+    <link rel="stylesheet" href="https://quantumexperience.cdnedge.bluemix.net/ibm-q-navigation/latest/ibm_q_navigation.css">
+    
+    <title>GHZ States &#8212; Full User Guide 2.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/material-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/material-design-lite-1.3.0/material.blue-indigo.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/themeExt.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quantum Algorithms" href="../004-Quantum_Algorithms/060-Quantum_Algorithms.html" />
+    <link rel="prev" title="Entanglement and Bell Tests" href="002-Entanglement_and_Bell_Tests.html" /> 
+  </head>
+<body>
+  <div id="q-navigation"></div>
+  <script>
+  ibm_q_navigation.default.load(
+    '#q-navigation', // element selector to put the navigation component
+    'IBM Q', // Brand name
+    null,
+    null,
+    true, // should the action buttons (search and signin) be hidden
+    true // use absolute paths for all the urls
+  );
+  </script>
+    <div class="mdl-layout mdl-js-layout  mdl-layout--fixed-drawer"><header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../introduction.html">
+              <span class="title-text">
+                  Full User Guide
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../000-FAQ/000-Frequently_Asked_Questions.html">Frequently Asked Questions</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../001-The_IBM_Q_Experience/001-Introducing_the_IBM_Q_Experience.html">Introducing the IBM Q Experience</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/002-The_Quantum_World.html">The Quantum World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/003-The_Quantum_Composer.html">The Quantum Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/004-Running_your_Quantum_Scores.html">Running your Quantum Scores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/005-The_Results.html">The Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/000-The_Weird_and_Wonderful_World_of_the_Qubit.html">The Wonderful World of the Qubit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html">The Quantum Bit (Qubit)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/002-Creating_superpositions.html">Creating Superpositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/003-Introducing_qubit_phase.html">Introducing Qubit Phase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/004-advanced_qubit_gates.html">Advanced Single-Qubit Gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/005-The_Bloch_Sphere.html">The Bloch Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/006-Decoherence.html">Decoherence</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="000-Multiple_Qubits_Gates_and_Entangled_States.html">Multi-Qubit Gates and Entangled States</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="001-Multiple_Qubits.html">Multiple Qubits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002-Entanglement_and_Bell_Tests.html">Entanglement and Bell Tests</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GHZ States</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../004-Quantum_Algorithms/060-Quantum_Algorithms.html">Quantum Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/061-Basic_Circuit_Identities_and_Larger_Circuits.html">Basic Circuit Identities and Larger Circuits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/070-Grover's_Algorithm.html">Grover’s Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/080-Deutsch-Jozsa_Algorithm.html">Deutsch-Jozsa Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/081-Learning_Parity_with_Noise.html">Learning Parity with Noise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/100-Quantum_Phase_Estimation.html">Quantum Phase Estimation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/110-Shor's_algorithm.html">Shor’s algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../005-Quantum_Error_Correction/059-Quantum_Error_Correction.html">Quantum Error Correction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../005-Quantum_Error_Correction/060-Quantum_Repetition_Code.html">Quantum Repetition Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../005-Quantum_Error_Correction/061-Stabilizer_Measurements.html">Stabilizer Measurements</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+<header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../introduction.html">
+              <span class="title-text">
+                  Full User Guide
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../000-FAQ/000-Frequently_Asked_Questions.html">Frequently Asked Questions</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../001-The_IBM_Q_Experience/001-Introducing_the_IBM_Q_Experience.html">Introducing the IBM Q Experience</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/002-The_Quantum_World.html">The Quantum World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/003-The_Quantum_Composer.html">The Quantum Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/004-Running_your_Quantum_Scores.html">Running your Quantum Scores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../001-The_IBM_Q_Experience/005-The_Results.html">The Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/000-The_Weird_and_Wonderful_World_of_the_Qubit.html">The Wonderful World of the Qubit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/001-The_Quantum_Bit_(Qubit).html">The Quantum Bit (Qubit)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/002-Creating_superpositions.html">Creating Superpositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/003-Introducing_qubit_phase.html">Introducing Qubit Phase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/004-advanced_qubit_gates.html">Advanced Single-Qubit Gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/005-The_Bloch_Sphere.html">The Bloch Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../002-The_Weird_and_Wonderful_World_of_the_Qubit/006-Decoherence.html">Decoherence</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="000-Multiple_Qubits_Gates_and_Entangled_States.html">Multi-Qubit Gates and Entangled States</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="001-Multiple_Qubits.html">Multiple Qubits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002-Entanglement_and_Bell_Tests.html">Entanglement and Bell Tests</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">GHZ States</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../004-Quantum_Algorithms/060-Quantum_Algorithms.html">Quantum Algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/061-Basic_Circuit_Identities_and_Larger_Circuits.html">Basic Circuit Identities and Larger Circuits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/070-Grover's_Algorithm.html">Grover’s Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/080-Deutsch-Jozsa_Algorithm.html">Deutsch-Jozsa Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/081-Learning_Parity_with_Noise.html">Learning Parity with Noise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/100-Quantum_Phase_Estimation.html">Quantum Phase Estimation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../004-Quantum_Algorithms/110-Shor's_algorithm.html">Shor’s algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../005-Quantum_Error_Correction/059-Quantum_Error_Correction.html">Quantum Error Correction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../005-Quantum_Error_Correction/060-Quantum_Repetition_Code.html">Quantum Repetition Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../005-Quantum_Error_Correction/061-Stabilizer_Measurements.html">Stabilizer Measurements</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+
+    <div class="document">
+        <div class="page-content">
+        
+  <div class="section" id="ghz-states">
+<h1>GHZ States<a class="headerlink" href="#ghz-states" title="Permalink to this headline">¶</a></h1>
+<p>Perhaps even stranger than Bell states are their three-qubit
+generalization, the <em>GHZ states</em>. An example of one of these states
+is <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}(|000\rangle- |111\rangle)\)</span>. The measured
+results should be half <span class="math notranslate nohighlight">\(|000\rangle\)</span> and half <span class="math notranslate nohighlight">\(|111\rangle\)</span>. GHZ
+states are named after Greenberger, Horne, and Zeilinger, who were the
+first to study them in 1997. GHZ states are also known as “Schroedinger
+cat states” or just “cat states.”</p>
+<p>In the 1990 paper by N. David Mermin, <em>What’s wrong with these elements
+of reality?</em>, the GHZ states demonstrate an even stronger violation of
+local reality than Bell’s inequality. Instead of a <em>probabilistic</em>
+violation of an inequality, the GHZ states lead to a <em>deterministic</em>
+violation of an equality.</p>
+<p><img alt="image0" src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_039c3bf6e6e54d76b8e66152e2f87877/images-classroom/Screen%20Shot%202016-05-02%20at%2012.42.45%20AMl8kxsz2b6cs4te29.png" />Imagine you have three independent systems which we denote by
+a blue, red, and green box. You are asked to solve the following
+problem: in each box there are two questions, labeled <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>,
+that have only two possible outcomes, <span class="math notranslate nohighlight">\(+1\)</span> or <span class="math notranslate nohighlight">\(-1\)</span>. You must come up
+with a solution to the following set of identities.</p>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(XYY=1\)</span>.</div>
+</div>
+<p><span class="math notranslate nohighlight">\(YXY =1\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(YYX=1\)</span>.</p>
+<div><p><span class="math notranslate nohighlight">\(XXX = -1\)</span>.</p>
+</div><div></div><div><p>Try it!</p>
+<p>After a while you will realize this is not possible. The simple way to
+show this is the following: if we multiply the first three equations
+together, we can simplify squared quantities and obtain <span class="math notranslate nohighlight">\(XXX=1\)</span>, which
+contradicts the fourth identity.</p>
+<p>Amazingly enough, a GHZ state can provide a solution to this problem.
+Then we have to accept what quantum mechanics teaches us: there are
+not&nbsp;local hidden elements of reality associated with each qubit which
+predetermine the outcomes of measurements in the <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>
+bases.&nbsp;So, as Mermin pointed out, the GHZ test described above
+contradicts the possibility of physics being described by local reality!
+As opposed to the Bell test, which provides only a statistical evidence
+for the contradiction, the GHZ test can rule out the local reality
+description with certainty after a single run of the experiment (not
+including the effects of noise and imperfections in our system).</p>
+<p><img alt="image1" src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_039c3bf6e6e54d76b8e66152e2f87877/images-classroom/Screen%20Shot%202016-05-02%20at%2012.42.54%20AMjqrs28j545p6tj4i.png" /></p>
+<div><div class="line-block">
+<div class="line">To make this state we use the following circuit, which is slightly
+different to the standard way of creating a GHZ (in our hardware the
+CNOT gates are&nbsp;constrained in their orientation). In the first part of
+the circuit, the ground state is taken to a superposition
+<span class="math notranslate nohighlight">\(\frac{1}{2}(|001\rangle+ |011\rangle + |101\rangle
++|111\rangle)\)</span>.&nbsp;The two CNOTs now&nbsp;entangle all the qubits into the
+state <span class="math notranslate nohighlight">\(\frac{1}{2}(|001\rangle + |010\rangle + |100\rangle +
+|111\rangle)\)</span>. The final three&nbsp;Hadamard gates map this to the GHZ
+state <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{2}}(|000\rangle - |111\rangle)\)</span>.</div>
+</div>
+<p>To make the measurements in the <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> basis we again rotate
+the measurement using the circuits you have seen before. For example,
+consider the <span class="math notranslate nohighlight">\(XXX\)</span> measurement. Note that flipping all three qubits of
+the GHZ state gives the same state with the minus sign. In other words,
+the GHZ state is a <span class="math notranslate nohighlight">\(-1\)</span> eigenvector of a three-qubit Pauli operator
+<span class="math notranslate nohighlight">\(XXX\)</span>. This implies</p>
+<p><span class="math notranslate nohighlight">\(XXX=-1\)</span></p>
+<p>for each realization of the experiment. Next consider the Pauli operator
+<span class="math notranslate nohighlight">\(XYY\)</span>. One can check that the GHZ state is a <span class="math notranslate nohighlight">\(+1\)</span> eigenvector of
+<span class="math notranslate nohighlight">\(XYY\)</span>. Therefore,</p>
+<p><span class="math notranslate nohighlight">\(XYY=1\)</span></p>
+<div class="line-block">
+<div class="line">for each realization of the experiment. Likewise,</div>
+</div>
+<p><span class="math notranslate nohighlight">\(YXY=1\)</span>, and <span class="math notranslate nohighlight">\(YYX=1\)</span>.</p>
+<p>One can verify this by running the experiments using the circuits
+provided below.</p>
+<div class="line-block">
+<div class="line">Here you can see the results we got when we ran this experiment on the
+processor:</div>
+</div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img alt="image2" src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_039c3bf6e6e54d76b8e66152e2f87877/images-classroom/Screen%20Shot%202016-05-03%20at%2010.30.31%20PM5vv145poc8qfflxr.png" /></p>
+<div class="line-block">
+<div class="line">EXAMPLE CIRCUITS:</div>
+</div>
+<div class="line-block">
+<div class="line">The first circuit shown below creates a GHZ state and then measures
+all qubits in the standard basis. The measured results should be half
+<span class="math notranslate nohighlight">\(000\)</span> and half <span class="math notranslate nohighlight">\(111\)</span>. The remaining four circuits describe the GHZ
+test. Each circuit prepares the GHZ state and then measures the three
+qubits by choosing the measurement bases according to <span class="math notranslate nohighlight">\(YYX\)</span>,
+<span class="math notranslate nohighlight">\(YXY\)</span>, <span class="math notranslate nohighlight">\(XYY\)</span>, and <span class="math notranslate nohighlight">\(XXX\)</span> respectively.</div>
+</div>
+</div></div><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><strong>3Q GHZ State</strong></div>
+</div>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=479450d7f0d95a28e4fa155576c25c03&sharedCode=true" target="_parent"><img src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_42263efc45184c7ca4742512588a1942/codes/code-512686ae13a97aaed71304b5d814a41f.png" style="width: 100%; max-width: 600px;"></a>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=479450d7f0d95a28e4fa155576c25c03&sharedCode=true" target="_blank" style="text-align: right; display: block;">Open in composer</a><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><strong>3Q GHZ State YYX-Measurement</strong></div>
+</div>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=0e6a68c3cd23d638b8093ad4d067d45f&sharedCode=true" target="_parent"><img src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_42263efc45184c7ca4742512588a1942/codes/code-d9c40f27d67d4bf722209faa34a86971.png" style="width: 100%; max-width: 600px;"></a>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=0e6a68c3cd23d638b8093ad4d067d45f&sharedCode=true" target="_blank" style="text-align: right; display: block;">Open in composer</a><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><strong>3Q GHZ State YXY-Measurement</strong></div>
+</div>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=09ed38c0975b6f51d6945603177805c3&sharedCode=true" target="_parent"><img src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_42263efc45184c7ca4742512588a1942/codes/code-570b68405ba63ca75c724d3f40a8c8fa.png" style="width: 100%; max-width: 600px;"></a>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=09ed38c0975b6f51d6945603177805c3&sharedCode=true" target="_blank" style="text-align: right; display: block;">Open in composer</a><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><strong>3Q GHZ State XYY-Measurement</strong></div>
+</div>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=ae3e60e47e4c28f29edcb5a9a49519c3&sharedCode=true" target="_parent"><img src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_039c3bf6e6e54d76b8e66152e2f87877/codes/code-0e6a68c3cd23d638b8093ad4d06b9d72.png" style="width: 100%; max-width: 600px;"></a>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=ae3e60e47e4c28f29edcb5a9a49519c3&sharedCode=true" target="_blank" style="text-align: right; display: block;">Open in composer</a><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><strong>3Q GHZ State XXX-Measurement</strong></div>
+</div>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=ba07eaf7c8c75a9f9c5cf12a947ce1e0&sharedCode=true" target="_parent"><img src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_42263efc45184c7ca4742512588a1942/codes/code-b9096192e0ccec3ff6ac2156b7cff400.png" style="width: 100%; max-width: 600px;"></a>
+<a href="https://quantumexperience.ng.bluemix.net/qx/editor?codeId=ba07eaf7c8c75a9f9c5cf12a947ce1e0&sharedCode=true" target="_blank" style="text-align: right; display: block;">Open in composer</a></div>
+
+
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+     <a id="button-prev" href="002-Entanglement_and_Bell_Tests.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
+         <div class="pagenation-text">
+            <span class="pagenation-direction">Previous</span>
+            <div>Entanglement and Bell Tests</div>
+         </div>
+     </a>
+     <a id="button-next" href="../004-Quantum_Algorithms/060-Quantum_Algorithms.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
+        <div class="pagenation-text">
+            <span class="pagenation-direction">Next</span>
+            <div>Quantum Algorithms</div>
+        </div>
+     </a>
+        
+        </main>
+    </div>
+  </body>
+</html>
