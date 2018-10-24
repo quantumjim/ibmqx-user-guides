@@ -77,7 +77,15 @@ a.reference.external:hover{
     padding-left: 30px !important;
     border-right: 1px solid white;
 }
-
+.composerButton .icon{
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+ .composerButton svg{
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+ }
 
 #button-next{
     border-left: 1px solid white;
@@ -247,6 +255,7 @@ span.link-wrapper{
 }
 .composerButton{
     text-align: left;
+    display: flex;
     font-size: 16px;
     font-weight: 100;
     cursor: pointer;
@@ -258,6 +267,7 @@ span.link-wrapper{
 }
 .linkButton{
     display: initial !important;
+    text-decoration: none;
 }
 .composerButton:hover{
     background: #054ADA;
